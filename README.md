@@ -1,0 +1,114 @@
+# RCPT-prediction
+# Predictive Modeling of Chloride Ion Penetration Resistance in Self-Compacting Concrete Using Ensemble Machine Learning Algorithms
+
+## Overview
+This repository provides the source code, trained machine learning model, and a graphical user interface (GUI) for predicting the Rapid Chloride Penetration Test (RCPT) values of self-compacting concrete. The framework is based on ensemble machine learning algorithms and is intended to support research and preliminary assessment of concrete durability.
+
+The tool enables RCPT prediction using mix design parameters and curing temperature through a user-friendly interface.
+
+---
+
+## Requirements
+
+### Software
+- Python 3.8 or higher
+
+### Python Libraries
+- numpy  
+- pandas  
+- scikit-learn  
+- xgboost  
+- tkinter (included with standard Python distributions)
+
+Install the required dependencies using:
+
+```bash
+pip install numpy pandas scikit-learn xgboost
+Repository Structure
+├── XGBoost_RCPT.pkl        # Trained XGBoost model
+├── rcpt_gui.py             # GUI-based RCPT prediction tool
+├── dataset.csv             # (Optional) Sample dataset
+├── README.md               # Project documentation
+
+Input Parameters
+
+The GUI accepts the following inputs:
+
+Cement (C1) (kg)
+
+Fly Ash (FA) (kg)
+
+Silica Fume (SF) (kg)
+
+Coarse Aggregate (CA) (kg)
+
+Fine Aggregate (kg)
+
+Water (W) (liter)
+
+Temperature (°C)
+
+Output
+
+Predicted RCPT value (Coulombs)
+
+How to Run the Application
+
+1. Ensure all required libraries are installed.
+
+2. Place the trained model file XGBoost_RCPT.pkl in the same directory as the GUI script.
+
+3. Run the GUI application using:
+python rcpt_gui.py
+
+4. Enter the mix design parameters and curing temperature.
+
+5. Click Predict RCPT to obtain the predicted RCPT value.
+
+6. Use Export CSV to save inputs and results.
+
+7. Use Clear Inputs to reset the interface.
+
+
+Guidelines for Authors and Contributors
+
+Clearly document any changes made to the model, dataset, or interface.
+
+When retraining models, follow consistent data preprocessing and validation procedures.
+
+Hyperparameter optimization should be performed using appropriate cross-validation techniques.
+
+Follow clean coding practices and include comments for clarity.
+
+Any reuse or extension of this work must appropriately cite the original study.
+
+Intended Use and Limitations
+
+The model is trained on experimental data specific to self-compacting concrete.
+
+Predictions are reliable only within the range of the training dataset.
+
+The tool is intended for research and educational purposes and does not replace experimental testing.
+
+Authors and Developers
+
+Title of the Study
+Predictive Modeling of Chloride Ion Penetration Resistance in Self-Compacting Concrete Using Ensemble Machine Learning Algorithms
+
+Authors
+
+Niraj Kumar Singh
+
+Anshulee Patel
+
+Somdutta*
+
+Alok Pandey
+
+Avinash Kumar
+
+* Corresponding author
+
+Citation
+
+If you use this repository in your research, please cite the associated publication accordingly.
